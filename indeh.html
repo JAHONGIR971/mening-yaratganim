@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Yaratganim — Shaxsiy Portfolio va Loyihalar</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #334155;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        .hero {
+            text-align: center;
+            padding: 6rem 5% 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero span {
+            color: var(--primary);
+        }
+        .hero p {
+            color: var(--muted);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            color: #0f172a;
+            font-weight: 700;
+            padding: 0.85rem 2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+        }
+        section {
+            padding: 4rem 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--surface);
+            padding: 1.75rem;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        .card h3 {
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+        .card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .tag {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+        .interactive-box {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            margin-top: 2rem;
+        }
+        .form-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            border: 1px solid #475569;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 1rem;
+        }
+        input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            border-top: 1px solid #334155;
+            color: var(--muted);
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mening Yaratganim</div>
+        <nav>
+            <a href="#haqida">Haqida</a>
+            <a href="#loyihalar">Loyihalar</a>
+            <a href="#qoshish">Yangi g'oya</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Salom! Bu — <span>Mening Yaratganim</span></h1>
+        <p>G'oyalar, ijodiy ishlar va raqamli loyihalar jamlangan zamonaviy shaxsiy sahifa.</p>
+        <a href="#loyihalar" class="btn">Loyihalarni ko'rish</a>
+    </div>
+
+    <section id="haqida">
+        <h2>Nima uchun "Mening Yaratganim"?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🚀 Tezkor va Sodda</h3>
+                <p>Hech qanday ortiqcha yuklamalarsiz, barcha qurilmalarda birdek chiroyli ochiladigan zamonaviy dizayn.</p>
+            </div>
+            <div class="card">
+                <h3>💡 Ijodiy Erkinlik</h3>
+                <p>O'z loyihalaringiz, maqolalaringiz yoki dasturlaringizni bir joyda jamlab, boshqalar bilan ulashing.</p>
+            </div>
+            <div class="card">
+                <h3>⚡ Interaktiv Imkoniyat</h3>
+                <p>Sahifaning o'zida yangi loyiha kartochkalarini qo'shib ko'rish va natijani darhol kuzatish mumkin.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="loyihalar">
+        <h2>Yaratilgan Loyihalar</h2>
+        <div class="grid" id="project-list">
+            <div class="card">
+                <h3>1-Loyiha: Aqlli Kundalik</h3>
+                <p>Kunlik vazifalarni rejalashtirish va vaqtni unumli boshqarish uchun yaratilgan veb-ilova.</p>
+                <span class="tag">Veb-dasturlash</span>
+            </div>
+            <div class="card">
+                <h3>2-Loyiha: Dizayn To'plami</h3>
+                <p>Zamonaviy interfeyslar uchun ranglar palitrasi va minimalistik ikonkalar jamlanmasi.</p>
+                <span class="tag">UI / UX Dizayn</span>
+            </div>
+            <div class="card">
+                <h3>3-Loyiha: O'quv Qo'llanma</h3>
+                <p>Yangi boshlovchilar uchun dasturlash asoslarini sodda tilda tushuntiruvchi loyiha.</p>
+                <span class="tag">Ta'lim</span>
+            </div>
+        </div>
+
+        <div class="interactive-box" id="qoshish">
+            <h3 style="margin-bottom: 1rem;">Ro'yxatga yangi loyiha qo'shib ko'ring</h3>
+            <div class="form-group">
+                <input type="text" id="proj-title" placeholder="Loyiha nomi (masalan: Mening birinchi o'yinim)">
+                <input type="text" id="proj-desc" placeholder="Qisqacha tavsif">
+                <button class="btn" onclick="addProject()">Qo'shish</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mening Yaratganim. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script>
+        function addProject() {
+            const titleInput = document.getElementById('proj-title');
+            const descInput = document.getElementById('proj-desc');
+            const title = titleInput.value.trim();
+            const desc = descInput.value.trim();
+
+            if (!title || !desc) {
+                alert("Iltimos, loyiha nomi va tavsifini kiriting!");
+                return;
+            }
+
+            const list = document.getElementById('project-list');
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <h3>${title}</h3>
+                <p>${desc}</p>
+                <span class="tag">Yangi qo'shilgan</span>
+            `;
+            list.appendChild(card);
+
+            titleInput.value = '';
+            descInput.value = '';
+        }
+    </script>
+
+</body>
+</html>
